@@ -10,7 +10,7 @@ Build PickleBnB as a phased Airbnb-style marketplace. Phase 1 should let a user 
 - Clerk is present in the Next layout and Convex client provider, but Convex auth still needs the Clerk provider enabled.
 - Convex currently contains starter `numbers` demo schema and functions that should be replaced by marketplace domain tables.
 - Stripe is not yet integrated.
-- Shadcn is not yet installed/configured in the repo.
+- Shadcn is initialized in the repo with Tailwind v4 theme variables, `components.json`, `lib/utils.ts`, and the base button component.
 
 ## External Tooling Notes
 
@@ -35,7 +35,7 @@ Use Clerk CLI/docs support to validate Clerk app setup, environment variables, O
 
 ### Shadcn
 
-Use Shadcn components for forms, dialogs, drawers, cards, tabs, tables, skeletons, badges, calendars, and dashboard UI. No Shadcn MCP server is currently visible in the enabled MCP list, so implementation should use the Shadcn CLI/docs unless that server is added later.
+Use Shadcn components for forms, dialogs, drawers, cards, tabs, tables, skeletons, badges, calendars, and dashboard UI. The Shadcn MCP server is configured and should be used to inspect registry items and derive add commands before installing new UI primitives.
 
 ## Phase 1 MVP
 
